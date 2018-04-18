@@ -1,0 +1,157 @@
+.app_body{
+    background-color: #fafafa;
+        width:100%;   
+    font-family: 'Source Sans pro', sans-serif;
+}
+
+.app_body .main_container{
+max-width: 950px;
+margin: 0 auto;
+display: flex;
+padding-top: 130px;
+position: relative;
+box-sizing: border-box;    
+flex-wrap: wrap;
+width:100%;
+}
+.feed_body{
+    max-width:620px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 3px;
+border: 1px solid #e6e6e6;
+overflow: hidden;
+background-color: #fafafa;
+margin-bottom: 70px;
+margin-right: 35px;
+}
+.feed_body .content_wrap{
+    width: 100%;
+} 
+ .profile_section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height:60px;
+    align-items: center;
+}
+ .profile_section .profile_img{
+flex-basis: 7%;    
+}
+ .profile_section .profile_img img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    object-fit: cover;
+    object-position: 80% 20%;
+    border:1px solid rgba(25,20,55,0.6);
+}
+.profile_name{
+    position: relative;   
+    font-weight:600;
+    box-sizing: border-box;
+}
+.backdrop_img img{
+    max-width: 100%;
+}
+.user_block{
+    padding: 0 16px;
+}
+.lcs{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+padding:18px 0 5px 0;
+}
+.lcs div:nth-child(1){
+    flex:10;
+    margin-right: 10px;
+}
+.lcs div:nth-child(2){
+    flex:1;
+}
+.lcs img{
+    max-width: 100%;
+    display: inline-block;
+}
+.total_likes{
+width: 100%;
+display: flex;
+
+
+}
+.total_likes .likes_box{
+font-weight: 600;
+color: #262626;
+}
+.comments{
+    width:100%;
+    display: flex;
+    overflow: hidden;
+justify-content: flex-start;
+text-overflow: ellipsis;
+}
+.comments ul{
+    list-style-type: none;
+    padding: 0;
+}
+.comments ul li{
+    position: relative;
+    padding-bottom: 6px; 
+}
+.comments .name{
+text-decoration: none;
+font-weight: 600;
+color: #262626; 
+font-weight: 600;
+margin-right: .3em;
+}
+.comments .more{
+    color:#999;
+    margin-left: .3em;
+    text-decoration: none;
+}
+.comments .loadmore{
+    text-decoration: none;
+    font-size: 14px;
+    color:#999;
+    font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+}
+.side_menu{
+max-width: 293px;
+width:100%;
+
+}
+.feed_body .fa-heart{
+    font-size: 22px;
+    margin-right: 15px;
+}
+.feed_body .fa-comment{
+    font-size: 22px;
+}
+.feed_body .fa-bookmark{
+    font-size: 20px;
+}
+#sec_text{
+    box-sizing: border-box;
+    border-top:1px solid #efefef;
+    color: #999;
+
+}
+#text_area{
+background: 0 0;
+outline: none;
+border: 0;
+height:18px;
+max-height: 80px;
+padding: 0;
+}
