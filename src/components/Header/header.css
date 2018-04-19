@@ -65,15 +65,76 @@ overflow: hidden;
     flex-wrap: wrap;
 
 }
-@media only screen and (max-width:900px){
-    .header_main{
-       
+.nav_main{
+    display: none;
+}
+#ico{
+visibility: hidden;
+}
+@media only screen and (max-width:578px){
+    .header_main .inner_head{
+       display:none;
+
     }
+   
+     #ico{
+        visibility: visible !important;
+    position: relative;
+    top:110px;
+    right:0;
+    z-index: 1;
+display: inline;
+    }
+    .nav_main{
+        margin-top: 0px;
+    width: 100%;
+    height: 0;
+         background-color:#efefef;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         visibility: hidden;
+         transition: height 0.3s ease-in-out;
+         position: relative;
+box-sizing: border-box;
+    }
+ #ico:hover .nav_main{
+     height: 200px;
+     visibility: visible;
+ }
+    #i{
+display: flex;
+align-items: center;
+    }
+    .nav_main .in{
+        margin-bottom: 30px;
+        
+    }
+    .nav_main .f{
+        margin-bottom: 40px;
+    }
+    .nav_main .r{
+        display: flex;
+        flex-direction: row;
+        
+    }
+     .r .fa-heart{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+     .r .fa-dot-circle{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .r .fa-user{
+        font-size: 16px;
+    }
+   
 }
 .fa-instagram{
 font-size: 32px;
 margin-right:13px;
-position: relative;  
+position: relative;   
 }
 .header_main  .fa-dot-circle{
     font-size: 20px;
