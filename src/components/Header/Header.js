@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
+import Search from '../Search/Search';
 export default class Header extends React.Component {
     render() 
     {
@@ -9,7 +10,7 @@ export default class Header extends React.Component {
          
         
         return (
-            <div>
+            <div id="e">
             <div className="header_main">
                 <div className="inner_head">
                     <div className="icon_main">
@@ -20,9 +21,7 @@ export default class Header extends React.Component {
                         </div>
                     </div>
                     <div className="form1">
-                        <form>
-                            <input type="text" placeholder="search" />
-                        </form>
+                       <Search/>
                     </div>
                     <div className="routing">
                         <i className="far fa-dot-circle"></i>

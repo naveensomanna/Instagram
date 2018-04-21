@@ -1,12 +1,14 @@
 
+#e{
+    position: fixed;
+    z-index: 1;
+    width:100%;
 
+}
 .header_main{
     background-color: #fff;
     width:100%;
     height: 77px;
-position: fixed;
-top:0;
-z-index: 1;
 border-bottom:1px solid rgba(0,0,0,.0975);
 box-sizing: border-box;
 font-family: 'Source Sans Pro',sans-serif;
@@ -25,7 +27,6 @@ box-sizing: border-box;
 max-width: 900px; 
 flex-direction: row;
 justify-content: flex-start;
-position: relative;
 box-sizing: border-box;
 flex-wrap: wrap;
 }
@@ -53,9 +54,7 @@ align-items: center;
 #insta  span{
 overflow: hidden;
 }
-.header_main .form1{
-    
-}
+
 .header_main .routing{
     flex:2;
     display: flex;
@@ -71,24 +70,24 @@ overflow: hidden;
 #ico{
 visibility: hidden;
 }
-@media only screen and (max-width:578px){
+@media only screen and (max-width:600px){
     .header_main .inner_head{
        display:none;
 
     }
-   
+   #icon1{
+       position: absolute;
+       top:30px;
+   }
      #ico{
         visibility: visible !important;
-    position: relative;
-    top:110px;
-    right:0;
     z-index: 1;
-display: inline;
+    display: inline;
+
     }
     .nav_main{
-        margin-top: 0px;
-    width: 100%;
-    height: 0;
+         width: 100%;
+         height: 0;
          background-color:#efefef;
          display: flex;
          flex-direction: column;
@@ -96,7 +95,8 @@ display: inline;
          visibility: hidden;
          transition: height 0.3s ease-in-out;
          position: relative;
-box-sizing: border-box;
+         box-sizing: border-box;
+         justify-content: space-between;
     }
  #ico:hover .nav_main{
      height: 200px;
@@ -106,28 +106,26 @@ box-sizing: border-box;
 display: flex;
 align-items: center;
     }
-    .nav_main .in{
-        margin-bottom: 30px;
-        
-    }
-    .nav_main .f{
-        margin-bottom: 40px;
-    }
-    .nav_main .r{
+    
+     #r{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+     #r .fa-heart{
+        font-size: 23px;
+        margin-bottom:5px; 
         
     }
-     .r .fa-heart{
-        font-size: 16px;
-        margin-right: 10px;
+     #r .fa-dot-circle{
+        font-size: 23px;
+        margin-bottom:5px; 
+
     }
-     .r .fa-dot-circle{
-        font-size: 16px;
-        margin-right: 10px;
-    }
-    .r .fa-user{
-        font-size: 16px;
+    #r .fa-user{
+        font-size: 23px;
+        margin-bottom:5px; 
+
     }
    
 }
