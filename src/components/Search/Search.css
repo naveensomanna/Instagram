@@ -1,0 +1,7 @@
+.result_sug{
+    width:20%;
+z-index: 1;
+position: absolute;
+top:80px;
+overflow: hidden;
+}
